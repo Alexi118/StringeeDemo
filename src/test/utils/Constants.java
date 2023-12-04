@@ -1,5 +1,5 @@
 package utils;
 
 public class Constants {
-    public static final String baseURL = "https://magento.softwaretestingboard.com/";
+    public static final String baseURL = "https://automation-str.stringeex.com/";
 }
