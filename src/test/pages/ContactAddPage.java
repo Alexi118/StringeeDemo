@@ -18,7 +18,7 @@ public class ContactAddPage extends BasePage{
     public WebElement addAContact_btn;
 
     public void action_AddAContacts(){
-        name_txt.sendKeys("Cuong");
+        name_txt.sendKeys("cuong1234");
         email_txt.sendKeys("cuong@gmail.com");
         phone_txt.sendKeys("12345678");
         addAContact_btn.click();

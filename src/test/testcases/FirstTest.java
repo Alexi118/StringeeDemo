@@ -5,12 +5,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FirstTest extends BaseTest{
-//    @Test
-//    public void FirstTestCase(){
-//        waitFor.until(ExpectedConditions.visibilityOf(loginPage.email_txt));
-//        loginPage.action_logInWithCorrectUser();
-//        waitFor.until(ExpectedConditions.urlMatches("https://automation-str.stringeex.com/dashboard/callin"));
-//    }
+    @Test
+    public void FirstTestCase(){
+        waitFor.until(ExpectedConditions.visibilityOf(loginPage.email_txt));
+        loginPage.action_logInWithCorrectUser();
+        waitFor.until(ExpectedConditions.urlMatches("https://automation-str.stringeex.com/dashboard/callin"));
+    }
 
     @Test
     public void SecondTestCase() throws InterruptedException {
@@ -20,6 +20,7 @@ public class FirstTest extends BaseTest{
         contactPage.action_clickOn_AddContacts();
         contactAddPage.action_AddAContacts();
         waitFor.until(ExpectedConditions.visibilityOf(contactPage.firstContact_InList));
-        Assert.assertEquals(contactPage.firstContact_InList.getText(),"Cuong");
+        driver.navigate().refresh();
+        Assert.assertEquals(contactPage.firstContact_InList.getText(),"cuong1234");
     }
 }
